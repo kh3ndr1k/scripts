@@ -18,3 +18,22 @@ $ ./ansi-palette.sh
 $ ./ansi-palette.sh [bash/zsh]
 ```
 
+## logging
+
+A lightweight, reusable logging module for Bash scripts, with levels, priority filtering, and colored output.
+
+#### **use**
+
+```bash
+# load the module in the script that will be used
+source logging.sh
+
+# use the logging function in the script, with the log level as the first argument and a text
+# string as the second argument
+logging DEBUG "Debug message"
+logging INFO "Informational message"
+logging WARNING "Warning message"
+logging ERROR "Critical error message"
+logging CRITICAL "Critical error message"
+```
+
