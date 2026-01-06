@@ -37,7 +37,7 @@ logging ERROR "Critical error message"
 logging CRITICAL "Critical error message"
 ```
 
-### vaccum-empty
+## vaccum-empty
 
 A simple script that removes all empty files and directories from a directory set by default "$HOME". The script
 allows adding directories to be excluded via "$IGNORED_DIRS", preventing those files and directories from
