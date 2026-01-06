@@ -43,8 +43,8 @@ A simple script that removes all empty files and directories from a directory se
 allows adding directories to be excluded via "$IGNORED_DIRS", preventing those files and directories from
 being removed.
 
-**NOTE**: The script uses the logging.sh module, which must be located in "$HOME/.local/bash/lib/",
-          if it is not found, it uses a generic logging function. [logging](#logging)
+**NOTE**: The script uses the ![logging.sh](#logging) module, which must be located in "$HOME/.local/bash/lib/",
+          if it is not found, it uses a generic logging function.
 
 #### **use**
 
