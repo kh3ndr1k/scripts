@@ -44,7 +44,7 @@ allows adding directories to be excluded via "$IGNORED_DIRS", preventing those f
 being removed.
 
 **NOTE**: The script uses the logging.sh module, which must be located in "$HOME/.local/bash/lib/",
-          if it is not found, it uses a generic logging function.
+          if it is not found, it uses a generic logging function. [logging](#logging)
 
 #### **use**
 
