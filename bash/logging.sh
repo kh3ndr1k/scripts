@@ -26,8 +26,8 @@ logging() {
     # Skip messages below the configured log level
     [[ ${LOG_LEVEL_PRIORITIES[$level]} -lt ${LOG_LEVEL_PRIORITIES[$LOG_LEVEL]} ]] && return
 
-    # Print ERROR messages to stderr, others to stdout
-    if [[ $level == 'ERROR' ]]; then
+    # Print CRITICAL or ERROR messages to stderr, others to stdout
+    if [[ $level == 'ERROR' || $level == 'CRITICAL' ]]; then
         printf '%s %s\n' "$label" "$*" >&2
     else
         printf '%s %s\n' "$label" "$*"
@@ -46,6 +46,6 @@ logging() {
 # logging DEBUG "Debug message"
 # logging INFO "Informational message"
 # logging WARNING "Warning message"
-# logging ERROR "Critical error message"
+# logging ERROR "ERROR message"
 # logging CRITICAL "Critical error message"
-#
+
