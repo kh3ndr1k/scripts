@@ -56,3 +56,20 @@ $ chmod u+x vaccum-empty.sh
 $ ./vaccum-empty.sh
 ```
 
+## secure-erase
+
+This script facilitates the secure deletion of a complete directory, it uses the shred command to overwrite
+all files in the specified directory. Keep in mind that when execution the script, the files will be unrecoverable.
+
+#### **use**
+```bash
+# give execution permissions to the script
+$ chmod u+x secure-erase.sh
+
+# example using a directory
+$ ./secure-erase.sh -d ~/Directory/
+
+# for more information, use -h
+$ ./secure-erase.sh -h
+```
+
