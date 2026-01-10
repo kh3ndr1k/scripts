@@ -62,6 +62,7 @@ This script facilitates the secure deletion of a complete directory, it uses the
 all files in the specified directory. Keep in mind that when execution the script, the files will be unrecoverable.
 
 #### **use**
+
 ```bash
 # give execution permissions to the script
 $ chmod u+x secure-erase.sh
@@ -71,5 +72,22 @@ $ ./secure-erase.sh -d ~/Directory/
 
 # for more information, use -h
 $ ./secure-erase.sh -h
+```
+
+## fx-rename
+
+Renames the media files in a directory. By default, it renames them using the file hash (10 chars by default).
+You can also skip using the hash with '-n', but this only works when a prefix is required. Using '-i' allows
+you to provide a custom prefix, while '-p' adds the default prefix (IMG for images, VID for vides, Etc.).
+Before applying the changes you can use '-D' to display the results without modifying anything.
+
+#### **use**
+
+```bash
+# give execution permissions to the script
+$ chmod u+x fx-rename.sh
+
+# for more information, use -h
+$ ./fx-rename.sh -h
 ```
 
